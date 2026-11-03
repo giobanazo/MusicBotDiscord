@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/giobanazo/MusicBotDiscord/issues"
   },
-  "homepage": "https://github.com/giobanazo/MusicBotDiscord#readme"
+  "homepage": "https://github.com/giobanazo/MusicBotDiscord#readme",
+  "dependencies": {
+    "discord.js": "^14.28.0"
+  }
 }
