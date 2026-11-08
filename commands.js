@@ -4,10 +4,6 @@ import { REST, Routes, ApplicationCommandOptionType } from 'discord.js';
 
 const commands = [
   {
-    name: 'ping',
-    description: 'Replies with Pong!'
-  },
-  {
     name: 'play',
     description: 'Reproduce una canción en tu canal de voz',
     options: [
