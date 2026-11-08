@@ -1,11 +1,23 @@
 process.loadEnvFile(); // Cargar el archivo .env
 
-import { REST, Routes } from 'discord.js';
+import { REST, Routes, ApplicationCommandOptionType } from 'discord.js';
 
 const commands = [
   {
     name: 'ping',
     description: 'Replies with Pong!'
+  },
+  {
+    name: 'play',
+    description: 'Reproduce una canción en tu canal de voz',
+    options: [
+      {
+        name: 'cancion',
+        description: 'Nombre o enlace de la canción que quieres escuchar',
+        type: ApplicationCommandOptionType.String,
+        required: true
+      }
+    ]
   }
 ];
 
