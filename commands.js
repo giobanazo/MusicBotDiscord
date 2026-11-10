@@ -1,8 +1,21 @@
 process.loadEnvFile(); // Cargar el archivo .env
 
-import { REST, Routes, ApplicationCommandOptionType } from 'discord.js';
+import { ApplicationCommandOptionType, ChannelType, REST, Routes } from 'discord.js';
 
 const commands = [
+  {
+    name: 'join',
+    description: 'El bot se une a un canal de voz',
+    options: [
+      {
+        name: 'canal',
+        description: 'Canal de voz',
+        type: ApplicationCommandOptionType.Channel,
+        channel_types: [ChannelType.GuildVoice],
+        required: true
+      }
+    ]
+  },
   {
     name: 'play',
     description: 'Reproduce una canción en tu canal de voz',
