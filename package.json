@@ -19,6 +19,7 @@
   "homepage": "https://github.com/giobanazo/MusicBotDiscord#readme",
   "dependencies": {
     "@discordjs/voice": "^0.19.2",
+    "@iamtraction/play-dl": "^2.0.1",
     "discord.js": "^14.28.0",
     "sodium-native": "^5.2.1"
   }
